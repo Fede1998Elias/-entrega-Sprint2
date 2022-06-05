@@ -68,13 +68,6 @@ function mostrarGastos() {
         ${texto}: <span class="cantindadEstilo"> $ ${numero} </span>
         `;
 
-        const btnEliminar = document.createElement('button');
-        btnEliminar.textContent = 'Eliminar'
-        btnEliminar.onclick = () => {
-            eliminarProducto(id);
-        }
-        
-        nuevoGasto.appendChild(btnEliminar);
         //agregar html
         resultados.appendChild(nuevoGasto);
         

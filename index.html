@@ -11,7 +11,7 @@
     
 </head>
 <body class="centrarDiv">
-    <div class="overflowContainer">
+    <div class="overflowContainer" >
         <header>
             <h1>App de Gastos</h1>
             <h2>Ingresa cuánto pagó cada persona</h2>
@@ -19,8 +19,8 @@
     
         <div class="container">
             <form id="formulario">
-                <input id="texto" type="text" placeholder="Nombre">
-                <input id="numero" type="number" placeholder="Cantidad">
+                <input id="texto" type="text" placeholder="Nombre"  required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$" title="Nombre sólo acepta letras y espacios en blanco">
+                <input id="numero" type="number" placeholder="Cantidad" required>
                 <input id="submit" type="submit" value="Enviar">
             </form>
         
